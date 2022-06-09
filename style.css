@@ -1,0 +1,135 @@
+
+body{
+    background-image:url(./HighTide.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header{
+   width: 180px;
+   text-align: center;
+    font: 30px Arial ;
+    position: fixed;
+   right: calc(50vw - 90px);
+    animation: headermove 3s 1;
+}
+@keyframes headermove {
+    60% {font-size: 32px;}
+  }
+
+#taskwriteall{
+    display: block;
+    width: 200px;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    background-color: rosybrown;
+    position: fixed;
+    top: 75px;
+    right: calc((100vw - (50px)) /2);
+}
+
+#taskwrite{
+  border: none;
+    width: 160px;
+    height: 28px;
+    border-radius: 30px;
+    background-color: transparent;
+    position: absolute;
+    outline: none;
+  }
+  
+#add{
+  width: 28px;
+  height: 28px;
+  float: right;
+  cursor: pointer;
+  }
+
+.taskgroup{    
+  display: block;    
+  width: 130px;    
+  height: 30px;    
+  border-radius: 30px;    
+  background-color: #bc8f8f;    
+  position: fixed;    
+  top: 75px;    
+  right: calc((100vw - 320px)/2);    
+  border: none;    
+  cursor: pointer;            
+} 
+.taskgroup option{      
+  border-radius: 20px;      
+  background-color: whitesmoke;      
+  cursor: pointer;  }  
+  
+.task{    
+  width: 200px;  
+  height: 33px;  
+  border-radius: 30px;  
+  background-color: #a0e4f89f;  
+  position: relative;  
+  /* top: 120px; */
+  left: calc((100vw - 200px)/2);
+    
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.todo-list {
+  min-width: 15%;
+  list-style: none;
+  border-radius: 10px;
+  margin-top: 110px;
+}
+.todo {
+  border-radius: 30px;
+  height: 32px;
+  margin:  10px;
+  background: #a0e4f89f;
+  font-size: 1rem;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 2s ease;
+  
+}
+
+.filter-todo {
+  padding: 1rem;
+}
+.todo li {
+  flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none; 
+  cursor: pointer;  
+}
+.trash-btn{
+  margin-right: 7px;
+  margin-bottom: 4px;
+}
+
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
